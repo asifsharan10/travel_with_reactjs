@@ -1,0 +1,43 @@
+/* Services.css */
+
+.services-container {
+  
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .services-title {
+    text-align: center;
+  }
+  
+  .services-list {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .service-card {
+    background-image: url('/public/images/img-2.jpg');
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .service-card {
+      width: 100%;
+    }
+  }
+  
